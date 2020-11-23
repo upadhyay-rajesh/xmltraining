@@ -1,0 +1,14 @@
+<!ELEMENT movies (movie)+>
+<!ELEMENT movie (title, writer+, producer+, director+, actor*, comments?)>
+<!ATTLIST movie
+  type (drama | comedy | adventure | sci-fi | mystery | horror | romance | documentary) "drama"
+  rating (G | PG | PG-13 | R | X) "PG"
+  review (1 | 2 | 3 | 4 | 5) "3"
+  year CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>
+<!ELEMENT comments (#PCDATA)>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="AddressBook.xsl" type="text/xsl"?>
+
+<addressbook>
+<contact>
+    <name>Frank Rizzo</name>
+    <address>1212 W 304th Street</address>
+    <city>New York</city>
+    <state>New York</state>
+    <zip>10011</zip>
+</contact>
+<contact>
+    <name>Frank </name>
+    <address>12129 W 304th Street</address>
+    <city>New Yorkhjvgf</city>
+    <state>New Yorkhj</state>
+    <zip>100114</zip>
+</contact>
+</addressbook>

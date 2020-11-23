@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet  type="text/css" href="test.css"?>
+<resumes xmlns="x-schema:resumesch.xml">
+<resume name="DIPTI NAGDA" telno="5000099" sex="f" dob="24.07.81" ms="um">
+<address>
+	Ghatkopar (East) ,Mumbai -77
+</address>
+<qualification>
+		Tybsc in Computer Science 
+		MBA from IIM.
+</qualification>
+<languages.known>
+		English,Hindi,French,German
+</languages.known>
+<hobbies>
+		Listening Music,Watching Movies.
+</hobbies>
+<technical.skills>
+		<languages>
+			C,C++,Java,Vb,Oracle
+		</languages>
+		<os>
+			Dos,Linux,WindowsXP
+		</os>
+</technical.skills>
+</resume>
+
+
+<resume name="DIPTI KHILNANI" telno="5110099" sex="f" dob="19.08.81" ms="um">
+<address>
+	2b , Sindhu baug (a),Tilak road,
+	Ghatkopar (East) ,Mumbai -77
+</address>
+<qualification>
+		Tybsc in Computer Science 
+		MCA from VJTI.
+</qualification>
+<languages.known>
+		English,Hindi,Sindhi
+</languages.known>
+<hobbies>
+		Listening Music,Watching Movies.
+		Chit-Chatting with friends.
+</hobbies>
+<technical.skills>
+		<languages>
+			C,C++,Java,Vb,Oracle
+		</languages>
+		<os>
+			Dos,Linux,Windows2000
+		</os>
+</technical.skills>
+</resume>
+</resumes>
+

@@ -1,0 +1,9 @@
+<!ELEMENT person (biodata)+>
+<!ELEMENT biodata (personal,address,phone*,qualification,likes)>
+<!ELEMENT personal EMPTY>
+<!ATTLIST personal name CDATA #REQUIRED>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT likes EMPTY>
+<!ATTLIST likes hobby CDATA #REQUIRED>

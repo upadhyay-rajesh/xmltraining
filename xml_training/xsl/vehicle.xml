@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="./vehicles.xsl" type="text/xsl"?>
+<vehicles>
+  <vehicle year="1996" make="Land Rover" model="Discovery">
+    <mileage>36500</mileage>
+    <color>black</color>
+    <price>$22100</price>
+  </vehicle>
+
+  <vehicle year="1998" make="Land Rover" model="Discovery">
+    <mileage>15900</mileage>
+    <color>teal</color>
+    <price>$32000</price>
+  </vehicle>
+</vehicles>

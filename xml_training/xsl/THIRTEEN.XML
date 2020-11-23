@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<!-- example of  XSL -->
+
+<?xml-stylesheet type="text/xsl" href="thirteen.xsl" ?>
+
+<movies xmlns="x-schema:eleventh_schema.xml">
+
+	<movie rating="1" type="comedy" year="1965">
+		<title> padosan </title>
+		<director> mahesh dutta </director>
+		<producer> ramchadra </producer>
+		<writer> manmohan  </writer>
+		<actor> sunil dutt </actor>
+		<actor> kishore kumar </actor>
+		<actress> sayra bano </actress>
+		<comments> it was nice movie </comments>
+	</movie>
+
+	<movie rating="3" type="action" year="1965">
+		<title> cammando </title>
+		<director> subhash </director>
+		<producer> prakash </producer>
+		<writer> manohar  </writer>
+		<actor> mithun </actor>
+		<actress> mandakini </actress>
+		<comments> it was average movie </comments>
+	</movie>
+
+</movies>
+ 

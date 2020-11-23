@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+
+<trainlog xmlns="x-schema:TrainSchema.xml">
+  <session type="running" date="12/15/99">
+    <duration>01:00:00</duration>
+    <distance>5.5</distance>
+    <location>Warner Park</location>
+    <comments>Late afternoon run, felt strong.</comments>
+  </session>
+
+  <session type="cycling" date="12/17/99">
+    <duration>02:10:00</duration>
+    <distance>37.0</distance>
+    <location>Natchez Trace Parkway</location>
+    <comments>Hilly ride, felt weak toward the end.</comments>
+  </session>
+</trainlog>

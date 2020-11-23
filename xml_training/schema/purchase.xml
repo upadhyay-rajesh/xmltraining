@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<PURCHASEORDER xmlns:prod="www.ecomatcybershop.com/purchase" PRODID="P001" ORDERID="O001">
+	<ORDER>
+		<DATE>2000-02-12</DATE>
+		<PRODUCTNAME>dove</PRODUCTNAME>
+		<SUPPLIERNAME>steve shaw</SUPPLIERNAME>
+		<ADDRESS>13,bangalore</ADDRESS>
+		<QUANTITY>12</QUANTITY>
+		<PRICEPERQTY>45</PRICEPERQTY>
+
+	</ORDER>
+</PURCHASEORDER>

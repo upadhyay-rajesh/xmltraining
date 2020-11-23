@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<employees>
+	<employee id="HSBC001">
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<address>hyderabad</address>
+		<password>b</password>
+		<email>z</email>
+		
+	</employee>
+
+	<employee id="HSBC002">
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b2</password>
+		<email>z1</email>
+		<address>5023</address>
+	</employee>
+
+	<employee id="HSBC003">
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b1</password>
+		<email>z2</email>
+		<address>Delhi</address>
+	</employee>
+
+	<employee id="HSBC004">
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b3</password>
+		<email>z3</email>
+		<address>Bengaluru</address>
+	</employee>
+</employees>

@@ -1,0 +1,22 @@
+
+resume
+{
+	display:block;
+	font-family:SansSerif;
+	position:fixed;
+	fobont-style:lique;
+	font-weight:bold;
+	font-size:16px;
+	color:white;
+	background-color:black;
+    background-image:Begin.gif;
+	word-spacing:normal;
+	letter-spacing:normal;
+	text-decoration:none;
+	text-transform:capitalize;
+	text-align:justify;					
+	border-color:pink;
+	border-style:dotted;
+	border-width:medium;
+}
+

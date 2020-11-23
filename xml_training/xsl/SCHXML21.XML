@@ -1,0 +1,32 @@
+<Schema name="personschema" 
+	xmlns="urn:schemas-microsoft-com:xml-data"
+	xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+	<AttributeType name="name" dt:type="string"/>
+	<AttributeType name="hobby" dt:type="string"/>
+<ElementType name="personal" content="empty">
+<attribute type="name"/>
+</ElementType>
+
+<ElementType name="address" content="textOnly"/>
+
+<ElementType name="phone" content="textOnly" dt:type="int"/>
+
+<ElementType name="qualification" content="textOnly"/>
+
+<ElementType name="likes" content="empty">
+<attribute type="hobby"/>
+</ElementType>
+
+<ElementType name="biodata" content="eltOnly">
+	<element type="personal" minOccurs="1" maxOccurs="1"/>
+	<element type="address" minOccurs="1" maxOccurs="1"/>
+	<element type="phone" minOccurs="1" maxOccurs="*"/>
+	<element type="qualification" minOccurs="1" maxOccurs="1"/>
+	<element type="likes" minOccurs="1" maxOccurs="*"/>
+</ElementType>
+
+<ElementType name="person" content="eltOnly">
+	<element type="biodata" minOccurs="1"/>
+</ElementType>
+</Schema>

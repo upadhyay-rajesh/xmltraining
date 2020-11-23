@@ -1,0 +1,44 @@
+<Schema name="resumes_schema" 
+	xmlns="urn:schemas-microsoft-com:xml-data"
+	xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+	<ElementType name="address" content="textOnly"/>
+	<ElementType name="qualification" content="textOnly"/>
+	<ElementType name="languages.known" content="textOnly"/>
+	<ElementType name="hobbies" content="textOnly"/>
+	<ElementType name="languages" content="textOnly"/>	
+	<ElementType name="os" content="textOnly"/>
+
+	<AttributeType name="name" dt:type="string"/>
+	<AttributeType name="telno" dt:type="int"/>
+	<AttributeType name="sex" dt:type="enumeration" dt:values="f  m "/>
+	<AttributeType name="dob" dt:type="string"/>
+	<AttributeType name="ms" dt:type="enumeration" dt:values="um  m "/>
+		
+	
+	<ElementType name="technical.skills" content="eltOnly">
+	<element type="languages"/> 
+	<element type="os"/> 
+	</ElementType>
+
+
+
+<ElementType name="resume" content="eltOnly">
+<element type="address" minOccurs="1" maxOccurs="*"/>
+<element type="qualification"/>
+<element type="languages.known"/>
+<element type="hobbies"/>
+<element type="technical.skills"/>
+
+<attribute type="name"/>
+<attribute type="telno"/>
+<attribute type="sex" default="f"/> 
+<attribute type="dob"/>
+<attribute type="ms" default="um"/>
+</ElementType>
+
+
+<ElementType name="resumes" content="eltOnly">
+<element type="resume" minOccurs="1" maxOccurs="*"/>
+</ElementType>
+</Schema>

@@ -1,0 +1,43 @@
+
+<Schema name="movie" 
+	xmlns="urn:schemas-microsoft-com:xml-data" 
+	xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+<ElementType name="title" content="textOnly" dt:type="string"/>
+<ElementType name="director" content="textOnly" dt:type="string"/>
+<ElementType name="producer" content="textOnly" dt:type="string"/>
+<ElementType name="writer" content="textOnly" dt:type="string"/>
+<ElementType name="actor" content="textOnly" dt:type="string"/>
+<ElementType name="actress" content="textOnly" dt:type="string"/>
+<ElementType name="comments" content="textOnly" dt:type="string"/>
+
+<AttributeType name="rating" dt:type="enumeration" dt:values="1 2 3 4" required="yes"/>
+<AttributeType name="type" dt:type="enumeration" dt:values="romantic horror comedy action" required="yes" default="comedy"/>
+<AttributeType name="year" dt:type="string" required="yes" />
+
+
+
+<ElementType name="movie" content="eltOnly" model="open" >
+
+	<element type="title" minOccurs="1" maxOccurs="1" />
+	<element type="director" minOccurs="1" maxOccurs="*" />
+	<element type="producer" minOccurs="1" maxOccurs="*" />
+	<element type="writer" minOccurs="1" maxOccurs="*" />
+	<element type="actor" minOccurs="1" maxOccurs="*" />
+	<element type="actress" minOccurs="1" maxOccurs="*" />
+	<element type="comments" minOccurs="0" maxOccurs="*" />
+
+	<attribute type="rating" required="no"/>
+	<attribute type="type" default="action"/>
+	<attribute type="year" />
+	
+</ElementType>
+
+<ElementType name="movies" content="eltOnly" model="open" >
+
+	<element type="movie" minOccurs="1" maxOccurs="*" />
+	
+</ElementType>
+
+</Schema>
+ 

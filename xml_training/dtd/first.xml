@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<employees>
+	<employee>
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b</password>
+		<email>z &ss;</email>
+		<address>hyderabad</address>
+	</employee>
+
+	<employee>
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b2</password>
+		<email>z1</email>
+		<address>50 &gt; 23</address>
+	</employee>
+
+	<employee>
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b1</password>
+		<email>z2 &ss;</email>
+		<address>Delhi</address>
+	</employee>
+
+	<employee>
+		<name>
+			<firstname>abc</firstname>
+			<lastname>ss</lastname>
+			
+		</name>
+		<password>b3</password>
+		<email>z3</email>
+		<address>Bengaluru</address>
+	</employee>
+</employees>

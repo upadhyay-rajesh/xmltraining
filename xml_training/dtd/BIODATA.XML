@@ -1,0 +1,46 @@
+
+<!DOCTYPE  person[
+<!ELEMENT person (biodata)+>
+<!ELEMENT biodata (personal,address,phone*,qualification,likes)>
+<!ELEMENT personal EMPTY>
+<!ATTLIST personal name CDATA #REQUIRED>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT likes EMPTY>
+<!ATTLIST likes hobby CDATA #REQUIRED>
+]>
+<person>
+<biodata>
+<personal name="farzad"/>
+<address>
+658,korshed abad,
+katrak road,
+dadar,
+mumbai-14.
+</address>
+<phone> 4168466</phone>
+<phone> 8728887</phone>
+<qualification>7
+ H.S.C
+ S.Y.Bsc
+</qualification>
+<likes hobby="racing"/>
+</biodata>
+<biodata>
+<personal name="shweta"/>
+<address>
+658,korshed abad,
+katrak road,
+dadar,
+mumbai-14.
+</address>
+<phone> 4168466</phone>
+<phone> 8728887</phone>
+<qualification>
+ H.S.C
+ S.Y.Bsc
+</qualification>
+<likes hobby="racing"/>
+</biodata>
+</person>

@@ -1,0 +1,39 @@
+
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xslxml1.xsl" ?>
+
+
+<person xmlns="x-schema:schxml21.xml">
+	<biodata>
+		<personal name="farzad"/>
+		<address>
+			658,korshed abad,
+			katrak road,
+			dadar,
+			mumbai-14.
+		</address>
+		<phone> 4168466</phone>
+		<qualification>
+
+ 			H.S.C
+			 S.Y.Bsc
+		</qualification>
+		<likes hobby="racing"/>
+	</biodata>
+<biodata>
+<personal name="shweta"/>
+<address>
+658,korshed abad,
+katrak road,
+dadar,
+mumbai-14.
+</address>
+<phone> 4168466</phone>
+<phone> 8728887</phone>
+<qualification>
+ H.S.C
+ S.Y.Bsc
+</qualification>
+<likes hobby="racing"/>
+</biodata>
+</person>

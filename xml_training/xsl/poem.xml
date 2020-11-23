@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="poem.xsl"?>
+<content>
+<hr/>
+<title>The moron
+<chapter>chapter
+<section>section
+<subsection>Subsection</subsection></section></chapter>
+</title>
+<poem>
+<line>See the happy moron</line>
+<line>He doesn't give a damn</line>
+</poem>
+</content>
+

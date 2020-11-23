@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Schema name="MovieSchema"
+  xmlns="urn:schemas-microsoft-com:xml-data"
+  xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+  <ElementType name="title" content="textOnly"/>
+  <ElementType name="writer" content="textOnly"/>
+  <ElementType name="producer" content="textOnly"/>
+  <ElementType name="director" content="textOnly"/>
+  <ElementType name="actor" content="textOnly"/>
+  <ElementType name="comments" content="textOnly"/>
+  
+<AttributeType name="type" dt:type="enumeration"
+    dt:values="drama comedy adventure sci-fi mystery horror romance documentary"
+    default="drama"/>
+
+  <AttributeType name="rating" dt:type="enumeration"
+    dt:values="G PG PG-13 R X" default="PG"/>
+
+  <AttributeType name="review" dt:type="enumeration"
+    dt:values="1 2 3 4 5" default="3"/>
+  <AttributeType name="year" dt:type="int"/>
+
+<ElementType name="movie" content="eltOnly" order="seq">
+    <element type="title" minOccurs="1" maxOccurs="1"/>
+    <element type="writer" minOccurs="1" maxOccurs="*"/>
+    <element type="producer" minOccurs="1" maxOccurs="*"/>
+    <element type="director" minOccurs="1" maxOccurs="*"/>
+    <element type="actor" minOccurs="0" maxOccurs="*"/>
+    <element type="comments" minOccurs="0" maxOccurs="1"/>
+    <attribute type="type"/>
+    <attribute type="rating"/>
+    <attribute type="review"/>
+    <attribute type="year"/>
+  </ElementType>
+<ElementType name="movies" content="eltOnly">
+    <element type="movie" minOccurs="1" maxOccurs="*"/>
+  </ElementType>
+</Schema>
+

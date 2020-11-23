@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="product1.xsl"?>
+<PRODUCTDATA>
+	<PRODUCT PRODID="P001" CATEGORY="TOY">
+        	<PRODUCTNAME> Mini Bus</PRODUCTNAME>
+        	<DESCRIPTION>This is a tOY for chldren aged 4 above</DESCRIPTION>
+        	<PRICE> 75 </PRICE>
+		<QUANTITY>12</QUANTITY>
+	</PRODUCT>
+
+	<PRODUCT PRODID="P003" CATEGORY="OY">
+     		<PRODUCTNAME> Minigfdfsggf Bus</PRODUCTNAME>
+    		<DESCRIPTION>This idtrs a tOY for chldren aged 4 above</DESCRIPTION>
+		<PRICE> 756 </PRICE>
+		<QUANTITY>125</QUANTITY>
+	</PRODUCT>
+
+	<PRODUCT PRODID="P002" CATEGORY="TOY">
+		<PRODUCTNAME> Barbie Doll</PRODUCTNAME>
+		<DESCRIPTION>This is a Toy for chldren aged 5-10 above</DESCRIPTION>
+		<PRICE> 20 </PRICE>
+		<QUANTITY>200</QUANTITY>
+	</PRODUCT>
+</PRODUCTDATA>

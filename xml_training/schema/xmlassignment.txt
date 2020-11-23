@@ -1,0 +1,20 @@
+assignment xml
+
+1. create a xml file as follow :
+    employees(employee(name(firstname,middlename,lastname),address(street,city,state,country,pin)))
+    
+2. create a DTD file for above xml?
+3. create a xml file for above xml?
+4. for following xml create a DTD file ?
+   <cdac id="b001" location "bangalore">
+	<department id="d001" name="r&d">
+		<project title="food corporation" department="j2ee">
+			<timeduration>1 year</timeduration>
+			<noofemployee>18</noofemployee>
+		</project>
+	</department>
+    </cdac>
+5. for above xml create xsd file using group,sequence,complextype,simpletype?
+6. create a style sheet for a html file and call it through java scripting and html ?
+7. create an internal style sheet and call it through html?
+

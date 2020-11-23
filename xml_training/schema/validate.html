@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>
+untitled document
+</title>
+</head>
+<body bgcolor="#6699cc" text="#ffffff" vlink="yello" >
+<script language="javascript">
+var transformedwindow;
+
+function doValidate(){
+    var xmlDoc=new ActiveXObject("Msxml2.FreeThreadedDomDocument.6.0");
+    xmlDoc.async=false;
+    xmlDoc.load(document.frmTransform.TxtXMLFileName.value);
+	var namespace=xmlDoc.namespaceURI;
+	xmlDoc.validateOnParse=true;
+ 
+	var xsdschemacache=new ActiveXObject("Msxml2.XMLSchemaCache.6.0");
+	xsdschemacache.add(namespace,document.frmTransform.TxtXSDFileName.value);
+	xmlDoc.schemas=xsdschemacache;
+	xmlDoc.load(document.frmTransform.TxtXMLFileName.value);
+
+	var error=xmlDoc.parseError;
+
+transformedwindow=window.open('Transformed.htm','_new','location=0,status=1,toolbar=0,menuBar=0,scrollBar=0,directories=0,resizable=0,width=600,height=600');
+if(error!="")
+{
+  transformedwindow.document.write('<html><title>schema validator</title><body><p><b>validating the document</b></p><br>');
+  transformedwindow.document.write('<b>Error url: </b><br>'+error.url+'<br>');
+  transformedwindow.document.write('<b>Error line: </b><br>'+error.line+'<br>');
+  transformedwindow.document.write('<b>Error position: </b><br>'+error.linepos+'<br>');
+  transformedwindow.document.write('<b>Error reason: </b><br>'+error.reason+'<br>');
+  transformedwindow.document.write('</body></html>');
+}
+else
+{
+   transformedwindow.document.write('<html><title>schema validator</title><body><p><b>no error</b></p><br>');
+   transformedwindow.document.write('</body></html>');
+}
+}
+
+function doReset()
+{
+  document.frmTransform.TxtXSDFileName.value="";
+  document.frmTransform.TxtXMLFileName.value="";
+  if(!(typeof transformedwindow=="undefined"))
+     transformedwindow.close();
+}
+
+</script>
+<p>&nbsp;</p>
+<p aline="center"><font face="verdana,Arial,Helvetica,sansserif"><b><u>XML-SCHEMA validator module </u></b></font></p>
+<p>&nbsp;</p>
+
+<form name="frmTransform" method="post" action="">
+  <table width="75%" border="0" align="center">
+    <tr>
+       <td>
+          <div align="center"><b>Enter the Xml File name:</b></div>
+       </td>
+    <td>
+    <input type="text" name="TxtXMLFileName"> 
+   <font face="verdana,Arial,Helvetica,sansserif" size="2""><a href="#" onclick="javascript:doValidate()">Validate</a></font>
+   </td>
+</tr>
+<tr>
+       <td>
+          <div align="center"><b>Enter the Xsd File name:</b></div>
+       </td>
+    <td>
+    <input type="text" name="TxtXSDFileName"> 
+   <font face="verdana,Arial,Helvetica,sansserif" size="2""><a href="#" onclick="javascript:doReset()">reset</a></font>
+   </td>
+</tr>
+<tr>
+<td colspan="2">
+  <div align="left"></div>
+  <div align="left"></div>
+</td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font face="verdana,Arial,Helvetica,sansserif" size="2""></font>
+</p></form></body></html>

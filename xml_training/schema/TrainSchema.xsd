@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<Schema name="TrainSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+  <ElementType name="duration" content="textOnly" dt:type="time"/>
+
+  <ElementType name="distance" content="textOnly" dt:type="float"/>
+
+  <ElementType name="location" content="textOnly"/>
+
+  <ElementType name="comments" content="textOnly"/>
+<AttributeType name="type" dt:type="enumeration"
+    dt:values="running cycling swimming"/>
+
+  <AttributeType name="date" dt:type="date"/>
+
+  <ElementType name="session" content="eltOnly" order="seq">
+    <description>
+      This element type represents a single training session.
+    </description>
+    <element type="duration" minOccurs="1" maxOccurs="1"/>
+    <element type="distance" minOccurs="1" maxOccurs="1"/>
+    <element type="location" minOccurs="1" maxOccurs="1"/>
+    <element type="comments" minOccurs="0" maxOccurs="1"/>
+    <attribute type="type" default="running"/>
+    <attribute type="date"/>
+  </ElementType>
+
+<ElementType name="trainlog" content="eltOnly">
+    <description>
+      This element type represents training log consisting of one or more
+      training sessions.
+    </description>
+    <element type="session" minOccurs="1" maxOccurs="*"/>
+  </ElementType>
+</Schema>
+

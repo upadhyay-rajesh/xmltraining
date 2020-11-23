@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+
+<!DOCTYPE EMPLOYEES  SYSTEM "employee.dtd">
+
+<EMPLOYEES>
+	<EMPLOYEE>
+		<NAME>  Rajesh Upadhyay  </NAME>
+		<AGE>44</AGE>
+		<ADDRESS>Bangalore</ADDRESS>
+		<PASSWORD>ABCD</PASSWORD>
+	</EMPLOYEE>
+	<EMPLOYEE>
+		<NAME>Garima</NAME>
+		<AGE>35</AGE>
+		<ADDRESS>HYderabad</ADDRESS>
+		<PASSWORD>ABCD</PASSWORD>
+	</EMPLOYEE>
+	<EMPLOYEE>
+		<NAME>Swathi</NAME>
+		<AGE>25</AGE>
+		<ADDRESS>Delhi</ADDRESS>
+		<PASSWORD>ABCD</PASSWORD>
+	</EMPLOYEE>
+	<EMPLOYEE>
+		<NAME>Abhishek</NAME>
+		<AGE>25</AGE>
+		<ADDRESS>Chennai</ADDRESS>
+		<PASSWORD>ABCD</PASSWORD>
+	</EMPLOYEE>
+</EMPLOYEES>
+

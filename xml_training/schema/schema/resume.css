@@ -1,0 +1,41 @@
+
+resume	{
+		display:normal;
+		border-width:10px;
+		background-color:aqua;
+		text-decoration:bold;
+	}	
+
+address	{
+		display:block;
+		border-style:dotted;
+		background-color:red;
+		text-decoration:italic;
+		font-family:SansSerif;
+	}	
+
+qualification	{
+		display:block;
+		border-style:dashed;
+		background-color:pink;
+		text-decoration:blink;
+	}	
+
+languages.known{
+	display:block;
+	background-color:cyan;
+	text-decoration:line-through;
+	}
+
+hobbies{
+display:block;
+font-family:Comic Sans Ms;
+text-transform:capitalize;
+background-color:lightblue;
+}
+technical.skills{
+display:block;
+font-family:"Comic Sans Ms";
+text-decoration:overline;
+background-color:lightgreen;
+}

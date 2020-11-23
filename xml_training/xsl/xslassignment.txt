@@ -1,0 +1,20 @@
+assignment xml
+
+1. create a xml file as follow :
+    employees(employee(name(firstname,middlename,lastname),address(street,city,state,country,pin)))
+   create a xsl and show your data in sorted order according to firstname?
+    and call dtd also?
+
+2. create a xsd file for above xml and attach xsl?
+3. for following xml create a DTD file ?
+   <cdac id="b001" location "bangalore">
+	<department id="d001" name="r&d">
+		<project title="food corporation" department="j2ee">
+			<timeduration>1 year</timeduration>
+			<noofemployee>18</noofemployee>
+		</project>
+	</department>
+    </cdac>
+    create a xsl file where record should display in sorted order?
+4. create an externel style sheet and call it through xml?
+

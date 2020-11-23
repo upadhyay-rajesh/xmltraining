@@ -1,0 +1,45 @@
+<xsd:schema >
+	<xsd:element name="CUSTOUMERDATA" type="cdata"/>
+	<xsd:complexType name="cdata">
+		<xsd:sequence>
+			<xsd:element name="CUSTOUMER" type="custtype"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="custtype">
+		<xsd:sequence>
+			<xsd:element name="FIRSTNAME" type="xsd:string"/>
+			<xsd:element name="LASTNAME" type="xsd:string"/>
+			<xsd:element name="CONTACTINFO" type="contacttype"/>
+		</xsd:sequence>
+		<xsd:attribute name="CUSTOUMERID" type="xsd:string" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="contacttype">
+		<xsd:choice>
+			<xsd:element name="RESIDENCE" type="addtype" />
+			<xsd:element name="OFFICE" type="addtype" />
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="addtype">
+		<xsd:group ref="ADDPHONE" />
+	</xsd:complexType>
+	<xsd:group name="ADDPHONE">
+		<xsd:sequence>
+			<xsd:element name="ADDRESS" type="xsd:string" />
+			<xsd:element name="PHONE" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

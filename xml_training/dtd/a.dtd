@@ -1,0 +1,13 @@
+<!ELEMENT employees (employee+) >
+<!ELEMENT employee (name,password,email,address) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT password (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT address (#PCDATA) >
+
+<!ENTITY ss  "you all have to deposit cheque" >
+
+<!ATTLIST employee 
+					id (hsbc04|hsbc05) "hsbc04" 
+					gender CDATA #REQUIRED
+					hobbies CDATA #IMPLIED >
